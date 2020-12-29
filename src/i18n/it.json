@@ -1,0 +1,8 @@
+{
+  "components": {
+    "hello-world": {
+      "ecosystem": "Ecosistema",
+      "msg": "Benvenuto nella tua app Vue.js"
+    }
+  }
+}
