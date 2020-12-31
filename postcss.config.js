@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 module.exports = {
   plugins: [
     require('postcss-import'),
@@ -7,3 +9,4 @@ module.exports = {
     require('autoprefixer'),
   ],
 };
+/* eslint-enable */

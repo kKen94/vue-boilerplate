@@ -3,7 +3,9 @@ class App {
    * elements
    */
   // eslint-disable-next-line class-methods-use-this
-  get heading() { return $('h1'); }
+  get heading() {
+    return $('h1');
+  }
 
   /**
    * methods
