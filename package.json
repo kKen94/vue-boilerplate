@@ -82,13 +82,5 @@
     "wdio-chromedriver-service": "^6.0.3",
     "wdio-geckodriver-service": "^1.1.0",
     "webpack-bundle-analyzer": "^4.3.0"
-  },
-  "lint-staged": {
-    "src/**/*.{ts,tsx,js,jsx,vue,scss}": [
-      "yarn run fix:code:staged",
-      "yarn run fix:style",
-      "yarn run lint",
-      "git add"
-    ]
   }
 }
