@@ -2,7 +2,7 @@
   "src/**/*.{ts,tsx,js,jsx,vue,scss}": [
     "yarn run fix:code:staged",
     "yarn run fix:style",
-    "yarn run lint",
+    "yarn run lint:code",
     "git add"
   ]
 }
