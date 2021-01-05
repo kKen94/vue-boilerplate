@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build:development": "cross-env NODE_ENV=development vue-cli-service build",
+    "serve": "vue-cli-service serve --open",
+    "build:dev": "cross-env NODE_ENV=development vue-cli-service build",
     "build:prod": "cross-env NODE_ENV=production vue-cli-service build",
     "test:unit": "cross-env NODE_ENV=test vue-cli-service test:unit",
     "test:e2e": "cross-env NODE_ENV=production vue-cli-service test:e2e",
@@ -12,8 +12,8 @@
     "lint:code": "vue-cli-service lint --no-fix",
     "lint:style": "stylelint src/**/*.scss",
     "fix": "yarn run fix:code && yarn run fix:style",
-    "fix:code": "prettier --write \"src/**/*.{ts,tsx,js,jsx,vue}\"",
-    "fix:code:staged": "pretty-quick --staged --pattern \"src/**/*.{ts,tsx,js,jsx,vue}\"",
+    "fix:code": "prettier --write \"src/**/*.{ts,js,vue}\" && prettier --write \"tests/**/*.ts\"",
+    "fix:code:staged": "pretty-quick --staged --pattern \"src/**/*.{ts,js,vue}\" && pretty-quick --staged --pattern \"tests/**/*.ts}\"",
     "fix:style": "stylelint src/**/*.scss --fix",
     "report:prod": "cross-env NODE_ENV=production vue-cli-service build --report-json",
     "analyze:prod": "yarn run report:prod && yarn run webpack-bundle-analyzer dist/report.json"

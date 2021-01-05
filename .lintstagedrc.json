@@ -1,8 +1,16 @@
 {
-  "src/**/*.{ts,tsx,js,jsx,vue,scss}": [
+  "src/**/*.{ts,js,vue}": [
     "yarn run fix:code:staged",
+    "yarn run lint:code",
+    "git add"
+  ],
+  "src/**/*.scss": [
     "yarn run fix:style",
-    "vue-cli-service lint ./src/**/*.{js,jsx,ts,tsx,vue} --no-fix",
+    "git add"
+  ],
+  "tests/**/*.ts": [
+    "yarn run fix:code:staged",
+    "yarn run lint:code",
     "git add"
   ]
 }
