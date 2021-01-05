@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -198,5 +196,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-/* eslint-enable */

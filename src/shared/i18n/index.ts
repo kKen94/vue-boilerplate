@@ -9,3 +9,4 @@ export const messages = {
 };
 
 export const defaultLocale = Locales.IT;
+export { LOCALES } from './locales';

@@ -15,15 +15,13 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-
       "@wdio/mocha-framework",
       "@wdio/sync",
       "jest"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@home": ["src/modules/home/index.ts"],
+      "@i18n": ["src/shared/i18n/index.ts"],
     },
     "lib": [
       "esnext",
